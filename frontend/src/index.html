@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My clock</title>
+</head>
+<body>
+    <h1>Current Time:</h1>
+    <p id="currentTime"></p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/current_time')
+                .then(response => response.json())
+                .then(data => {
+                    // Assuming the JSON response has properties: hour, minute, and second
+                    const { hour, minute, second } = data;
+
+                    // Display the current time in the HTML document
+                    document.getElementById('currentTime').textContent = `${hour}:${minute}:${second}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching current time:', error);
+                });
+        });
+    </script>
+</body>
+</html>
