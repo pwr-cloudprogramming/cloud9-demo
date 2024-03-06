@@ -10,7 +10,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('/current_time')
+            fetch('http://<CLOUD9-PUBLIC-IP>:8080/current_time')
                 .then(response => response.json())
                 .then(data => {
                     // Assuming the JSON response has properties: hour, minute, and second
