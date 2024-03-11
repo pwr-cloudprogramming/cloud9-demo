@@ -9,7 +9,7 @@ cors = CORS(app)
 def hello_world():
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
-    return f"<h1>Hello, World!</h1><p>It is {current_time} o'clock.</p>"
+    return f"<h1>It is frontend!</h1><p>Current time: {current_time}</p>"
     
 @app.route("/current_time")
 def current_time():
