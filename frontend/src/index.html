@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My clock</title>
+    <title>Frontend time</title>
 </head>
 <body>
-    <h1>Current Time:</h1>
+    <h1>It is frontent!</h1>
     <p id="currentTime"></p>
 
     <script>
@@ -17,7 +17,7 @@
                     const { hour, minute, second } = data;
 
                     // Display the current time in the HTML document
-                    document.getElementById('currentTime').textContent = `${hour}:${minute}:${second}`;
+                    document.getElementById('currentTime').textContent = `Current time: ${hour}:${minute}:${second}`;
                 })
                 .catch(error => {
                     console.error('Error fetching current time:', error);
