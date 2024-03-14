@@ -26,3 +26,18 @@ How to run application:
 20. Open new tab in the browser and open the address `http://<CLOUD9-PUBLIC-IP>:8081/`
 21. Press F12 key to open Web Developer Tools in your browser.
 22. Refresh the page few times. Observe, how data is sent from backend to frontend.
+
+
+## Other
+
+Commands to install `docker compose` plugin in Cloud9:
+
+```
+sudo mkdir -p /usr/local/lib/docker/cli-plugins
+
+sudo curl -sL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-$(uname -m) \
+  -o /usr/local/lib/docker/cli-plugins/docker-compose
+
+sudo chown root:root /usr/local/lib/docker/cli-plugins/docker-compose
+sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+```
