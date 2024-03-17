@@ -2,9 +2,9 @@ FROM python:3.10-alpine
 
 WORKDIR /app
 
-RUN pip install flask flask_cors
-
 COPY src/ .
+
+RUN pip install -r requirements.txt
 
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
