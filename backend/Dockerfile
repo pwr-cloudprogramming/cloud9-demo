@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip install flask flask_cors
 
-COPY src/ /app
+COPY src/ .
 
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
