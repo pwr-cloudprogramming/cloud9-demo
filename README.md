@@ -28,9 +28,9 @@ How to run application:
 22. Refresh the page few times. Observe, how data is sent from backend to frontend.
 
 
-## Other
+## Appendix
 
-Commands to install `docker compose` plugin in Cloud9:
+Commands to install `docker compose` plugin in Cloud9 environment:
 
 ```
 sudo mkdir -p /usr/local/lib/docker/cli-plugins
