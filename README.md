@@ -30,7 +30,7 @@ How to run application:
 
 ## Appendix
 
-Commands to install `docker compose` plugin in Cloud9 environment:
+Commands to install `docker compose` plugin in Cloud9 environment. Paste and execute them one by one in the Cloud9 terminal window. Do not paste all lines at once!
 
 ```
 sudo mkdir -p /usr/local/lib/docker/cli-plugins
