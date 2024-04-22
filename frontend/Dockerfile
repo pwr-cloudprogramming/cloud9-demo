@@ -6,5 +6,7 @@ WORKDIR /home/stud
 
 COPY src/ .
 
+EXPOSE 3000
+
 ENTRYPOINT ["busybox"]
 CMD ["httpd", "-f", "-v", "-p", "3000"]
